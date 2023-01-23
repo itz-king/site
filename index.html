@@ -5,6 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-icons.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script>
+		function myfunction()
+		{ let x=getElementById('searchh');
+		 if(x=="") {alert("Give Something To Search !");}
+		 else {alert("Search Found !")}
+		}
+	</script>
 </head>
 <body>
 
@@ -17,11 +24,11 @@
 		    	<i class="bi bi-Music"></i> Music
 		    	<div style="font-size: 13px">GO ON !!!!!!!!!</div>
 		    </a>
-
 		    <div>
 			    <div class="input-group ">
-				  <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
-				  <span class="bg-success text-white border-0 input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+				  <input type="text" id="searchh" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+				    <button type="button" class="btn btn-default" onclick="myfunction()">
+				  <span class="bg-success text-white border-0 input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span></button>
 				</div>
 			</div>
 
